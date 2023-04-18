@@ -1,0 +1,10 @@
+
+S	java:S106#"9Replace this use of System.out or System.err by a logger.(Ø¦ˆŞúÿÿÿÿ
+d
+java:S1128	"IRemove this unused import 'org.springframework.validation.BindingResult'.(‹¶¸ùÿÿÿÿ
+n
+java:S1192."SDefine a constant instead of duplicating this literal "Product not found " 3 times.(î˜Ò°ùÿÿÿÿ
+S
+java:S1128"8Remove this unused import 'java.util.stream.Collectors'.(Óóº´úÿÿÿÿ
+x
+java:S14880"bImmediately return this expression instead of assigning it to the temporary variable "productDTO".(­ÿÔƒ

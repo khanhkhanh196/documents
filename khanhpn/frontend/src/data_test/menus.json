@@ -1,0 +1,26 @@
+[
+    {
+      "id" : 1,
+      "name" : "Tổng quan",
+      "url" : "/",
+      "icon" : "fas fa-home"
+    },
+    {
+      "id" : 2,
+      "name" : "Demo",
+      "icon" : "fas fa-cubes",
+      "children" : [
+        {
+          "id" : 4,
+          "name" : "Demo sách sản phẩm",
+          "url" : "/demo"
+        }
+      ]
+    },
+    {
+      "id" : 3,
+      "name" : "Cấu hình",
+      "icon" : "fas fa-cog",
+      "url" : "/settings"
+    }
+]

@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE log SYSTEM "logger.dtd">
+<log>
+<record>
+  <date>2020-12-05T04:09:48.294537200Z</date>
+  <millis>1607141388294</millis>
+  <nanos>537200</nanos>
+  <sequence>0</sequence>
+  <logger>global</logger>
+  <level>INFO</level>
+  <class>com.sapo.edu.demo.Menu</class>
+  <method>createNewCustomer</method>
+  <thread>1</thread>
+  <message>You enter is invalid, please try again</message>
+</record>
+<record>
+  <date>2020-12-05T04:09:58.983421700Z</date>
+  <millis>1607141398983</millis>
+  <nanos>421700</nanos>
+  <sequence>1</sequence>
+  <logger>global</logger>
+  <level>INFO</level>
+  <class>com.sapo.edu.demo.PrinterFile</class>
+  <method>printCustomer</method>
+  <thread>1</thread>
+  <message>Customer [Account Number: 123, Pin: 123, Balance: 123]</message>
+</record>
+<record>
+  <date>2020-12-05T04:10:08.237673Z</date>
+  <millis>1607141408237</millis>
+  <nanos>673000</nanos>
+  <sequence>2</sequence>
+  <logger>global</logger>
+  <level>INFO</level>
+  <class>com.sapo.edu.demo.PrinterFile</class>
+  <method>printCustomer</method>
+  <thread>1</thread>
+  <message>Customer [Account Number: 123, Pin: 123, Balance: 1231245]</message>
+</record>
+</log>
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE log SYSTEM "logger.dtd">
+<log>
+<record>
+  <date>2020-12-05T04:12:58.985500300Z</date>
+  <millis>1607141578985</millis>
+  <nanos>500300</nanos>
+  <sequence>0</sequence>
+  <logger>global</logger>
+  <level>INFO</level>
+  <class>com.sapo.edu.demo.PrinterFile</class>
+  <method>printMessage</method>
+  <thread>1</thread>
+  <message>Current ATM money is 1000000</message>
+</record>
+<record>
+  <date>2020-12-05T04:13:04.078000900Z</date>
+  <millis>1607141584078</millis>
+  <nanos>900</nanos>
+  <sequence>1</sequence>
+  <logger>global</logger>
+  <level>INFO</level>
+  <class>com.sapo.edu.demo.PrinterFile</class>
+  <method>printCustomer</method>
+  <thread>1</thread>
+  <message>Customer [Account Number: 123, Pin: 123, Balance: 32345]</message>
+</record>
+<record>
+  <date>2020-12-05T04:13:07.860201200Z</date>
+  <millis>1607141587860</millis>
+  <nanos>201200</nanos>
+  <sequence>2</sequence>
+  <logger>global</logger>
+  <level>INFO</level>
+  <class>com.sapo.edu.demo.PrinterFile</class>
+  <method>printMessage</method>
+  <thread>1</thread>
+  <message>Insufficient Balance</message>
+</record>
+<record>
+  <date>2020-12-05T04:13:10.447266700Z</date>
+  <millis>1607141590447</millis>
+  <nanos>266700</nanos>
+  <sequence>3</sequence>
+  <logger>global</logger>
+  <level>INFO</level>
+  <class>com.sapo.edu.demo.PrinterFile</class>
+  <method>printMessage</method>
+  <thread>1</thread>
+  <message>Withdraw successful: 123</message>
+</record>
+</log>

@@ -1,0 +1,51 @@
+.modal {
+  z-index: 9999;
+  background: rgba(1, 1, 1, 0.5);
+}
+
+.modal .btn {
+  -webkit-box-shadow: 0px 3px 1px -2px RGB(0 0 0/20%), 0px 2px 2px 0px RGB(0 0 0/14%), 0px 1px 5px 0px RGB(0 0 0/12%);
+          box-shadow: 0px 3px 1px -2px RGB(0 0 0/20%), 0px 2px 2px 0px RGB(0 0 0/14%), 0px 1px 5px 0px RGB(0 0 0/12%);
+  border: none;
+}
+
+.modal .btn:hover {
+  -webkit-box-shadow: 0px 2px 4px -1px RGB(0 0 0/20%), 0px 4px 5px 0px RGB(0 0 0/14%), 0px 1px 10px 0px RGB(0 0 0/12%);
+          box-shadow: 0px 2px 4px -1px RGB(0 0 0/20%), 0px 4px 5px 0px RGB(0 0 0/14%), 0px 1px 10px 0px RGB(0 0 0/12%);
+}
+
+.modal .btn.btn-close {
+  padding: 0;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  font-size: 20px;
+}
+
+.modal .btn.btn-close:hover {
+  color: var(--danger);
+}
+
+.modal .modal-dialog-new {
+  width: 600px;
+  max-width: unset;
+}
+
+.modal .modal-dialog-new .modal-content {
+  border: none;
+  border-radius: 4px;
+  -webkit-box-shadow: 0px 5px 5px -3px rgba(0, 0, 0, 0.2), 0px 8px 10px 1px rgba(0, 0, 0, 0.14), 0px 3px 14px 2px rgba(0, 0, 0, 0.12);
+          box-shadow: 0px 5px 5px -3px rgba(0, 0, 0, 0.2), 0px 8px 10px 1px rgba(0, 0, 0, 0.14), 0px 3px 14px 2px rgba(0, 0, 0, 0.12);
+}
+
+.modal .modal-dialog-new .modal-content .modal-header {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.modal .modal-dialog-new .modal-content .modal-header .ui-dialog-title {
+  font-size: 18px;
+  font-weight: 400;
+  color: #212b35;
+}
+/*# sourceMappingURL=Popup.css.map */

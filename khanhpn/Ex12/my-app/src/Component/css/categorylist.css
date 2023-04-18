@@ -1,0 +1,22 @@
+.left-side{
+    border: 1px solid black;
+    padding-left: 0px;
+    padding-right: 0px;
+    width: 100%;
+}
+.container {
+    padding-left: 0px;
+    padding-right: 0px;
+}
+.category{
+    border: 1px solid black;
+    padding-left: 0px;
+    padding-right: 0px;
+}
+ul li {
+    list-style-type: none;
+}
+
+.category-detail {
+    border: 1px solid black;
+}

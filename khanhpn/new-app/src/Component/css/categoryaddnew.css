@@ -1,0 +1,16 @@
+.addnew {
+    
+  }
+
+  .add-form{
+      padding-top: 60px;
+      width: 70%;
+  }
+  .row {
+      position: relative;
+  }
+  .submit-button {
+      align-self: flex-end;
+      position: absolute;
+      right:0;
+  }

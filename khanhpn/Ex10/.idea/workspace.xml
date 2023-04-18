@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="35139548-c672-4035-b7b4-f8662fd1cd37" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/../Ex05_DB_SpringBoot/demo/demo.iml" beforeDir="false" afterPath="$PROJECT_DIR$/../Ex05_DB_SpringBoot/demo/demo.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Ex05_DB_SpringBoot/demo/src/main/java/com/jdbc/demo/model/Category.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Ex05_DB_SpringBoot/demo/src/main/java/com/jdbc/demo/model/Category.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Ex05_DB_SpringBoot/demo/src/main/java/com/jdbc/demo/model/Product.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Ex05_DB_SpringBoot/demo/src/main/java/com/jdbc/demo/model/Product.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Ex05_DB_SpringBoot/demo/src/main/java/com/jdbc/demo/model/Warehouse.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Ex05_DB_SpringBoot/demo/src/main/java/com/jdbc/demo/model/Warehouse.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Ex05_DB_SpringBoot/demo/src/main/java/com/jdbc/demo/modelJPA/CategoryJPA.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Ex05_DB_SpringBoot/demo/src/main/java/com/jdbc/demo/modelJPA/CategoryJPA.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Ex05_DB_SpringBoot/demo/src/main/java/com/jdbc/demo/modelJPA/ProductJPA.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Ex05_DB_SpringBoot/demo/src/main/java/com/jdbc/demo/modelJPA/ProductJPA.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Ex05_DB_SpringBoot/demo/src/main/java/com/jdbc/demo/modelJPA/WarehouseJPA.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Ex05_DB_SpringBoot/demo/src/main/java/com/jdbc/demo/modelJPA/WarehouseJPA.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Ex05_DB_SpringBoot/demo/src/main/java/com/jdbc/demo/serviceJPA/CategoryServiceJPA.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Ex05_DB_SpringBoot/demo/src/main/java/com/jdbc/demo/serviceJPA/CategoryServiceJPA.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Ex08_SpringSecurity/rest-api-demo/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Ex08_SpringSecurity/rest-api-demo/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Ex08_SpringSecurity/rest-api-demo/src/main/java/com/restapi/restapidemo/dto/ProductDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Ex08_SpringSecurity/rest-api-demo/src/main/java/com/restapi/restapidemo/dto/ProductDTO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Ex08_SpringSecurity/rest-api-demo/src/main/java/com/restapi/restapidemo/entity/Category.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Ex08_SpringSecurity/rest-api-demo/src/main/java/com/restapi/restapidemo/entity/Category.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Ex08_SpringSecurity/rest-api-demo/src/main/java/com/restapi/restapidemo/entity/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Ex08_SpringSecurity/rest-api-demo/src/main/java/com/restapi/restapidemo/entity/User.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Ex08_SpringSecurity/rest-api-demo/src/main/java/com/restapi/restapidemo/service/CategoryServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Ex08_SpringSecurity/rest-api-demo/src/main/java/com/restapi/restapidemo/service/CategoryServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Ex08_SpringSecurity/rest-api-demo/src/test/java/com/restapi/restapidemo/RestApiDemoApplicationTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Ex08_SpringSecurity/rest-api-demo/src/test/java/com/restapi/restapidemo/RestApiDemoApplicationTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Ex6_RestAPI/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Ex6_RestAPI/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Ex9/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Ex9/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Ex9/Kafka/rest-api-demo/src/main/java/com/restapi/restapidemo/restcontroller/CategoryRestController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Ex9/Kafka/rest-api-demo/src/main/java/com/restapi/restapidemo/restcontroller/CategoryRestController.java" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="ProjectId" id="1pBwo1C6JLi47sw3SJnZgq8ptw1" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+    <option name="showMembers" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "last_opened_file_path": "D:/Spring/khanhpn/Ex08_SpringSecurity",
+    "project.structure.last.edited": "Problems",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.2"
+  }
+}]]></component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="35139548-c672-4035-b7b4-f8662fd1cd37" name="Default Changelist" comment="" />
+      <created>1614669963174</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1614669963174</updated>
+      <workItem from="1614669964377" duration="12000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+</project>
