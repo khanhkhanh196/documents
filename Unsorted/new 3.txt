@@ -1,0 +1,11 @@
+C:\Program Files\OpenJDK\jdk-11.0.17.8-hotspot
+
+setx JAVA_HOME "C:\Program Files\OpenJDK\jdk-11.0.17.8-hotspot"
+setx PATH "%PATH%;%JAVA_HOME%\bin";
+
+/usr/lib/jvm/java-17-openjdk-amd64
+
+export JAVA_HOME=/usr/lib/jvm/java-17-openjdk-amd64
+export M2_HOME=/opt/maven
+export MAVEN_HOME=/opt/maven
+export PATH=${M2_HOME}/bin:${PATH}

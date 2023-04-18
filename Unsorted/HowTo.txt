@@ -1,0 +1,131 @@
+Export Keycloak Realm with Users :
+
+sudo docker exec -it <keycloak> bash
+<keycloak> : container name
+
+sh kc.sh export --dir /opt/jboss/keycloak/imports --users realm_file --users-per-file 100  --realm ProductManagement
+
+https://www.baeldung.com/spring-cloud-rest-client-with-netflix-ribbon
+https://www.baeldung.com/spring-rest-with-zuul-proxy
+https://spring.io/guides/gs/service-registration-and-discovery/
+https://topdev.vn/blog/building-microservices-application-phan-1-su-dung-netflix-eureka-ribbon-va-zuul/
+
+cd /mnt/d/microservices/khong-an-tet/k8s/infrastructure/api-gateway
+cd /mnt/d/microservices/khong-an-tet/k8s/infrastructure/discovery-server
+cd /mnt/d/microservices/khong-an-tet/k8s/infrastructure/keycloak
+cd /mnt/d/microservices/khong-an-tet/k8s/infrastructure/keycloak-mysql
+cd /mnt/d/microservices/khong-an-tet/k8s/infrastructure/mysql-order
+ kubectl apply -f mysql-pv.yml
+  kubectl apply -f mysql-claim.yml
+  
+   minikube mount /mnt/d/data:/mnt/d
+   kubectl apply -f mysql-order.yml
+   kubectl delete -f mysql-order.yml
+cd /mnt/d/microservices/khong-an-tet/k8s/infrastructure/mysql-customer
+	kubectl apply -f mysql-customer-pv.yml
+    kubectl apply -f mysql-customer-claim.yml
+  
+    minikube mount /mnt/d/data:/mnt/d/data
+    kubectl apply -f mysql-customer.yml
+   kubectl delete -f mysql-customer.yml
+
+cd /mnt/d/microservices/khong-an-tet/k8s/service/order-service
+cd /mnt/d/microservices/khong-an-tet/k8s/service/customer-service
+
+
+kubectl delete -f .
+kubectl apply -f .
+
+docker image rm api-gateway
+ docker image rm discovery-server
+ docker  image rm order-service
+ docker  image rm customer-service
+ 
+docker build . -t api-gateway:latest
+docker build . -t discovery-server:latest
+docker build . -t order-service:latest
+docker build . -t customer-service:latest
+
+Deploy a service
+
+1. Build service as a image
+	-First build by sudo mvn clean install
+	-Then build image using docker file
+	
+	cd /mnt/d/microservices/khong-an-tet/customer-service
+	cd /mnt/d/microservices/khong-an-tet/order-service
+	cd /mnt/d/microservices/khong-an-tet/api-gateway
+	cd /mnt/d/microservices/khong-an-tet/discovery-server
+	
+	build docker image right after this cmd:
+	eval $(minikube docker-env)
+	
+	docker build . -t <image-name>
+	
+2. Forward port of gateway to be exposed to external
+
+ kubectl port-forward service/api-gateway 9099:8181
+ kubectl port-forward service/keycloak 30000:8080
+ 
+ another way: minikube service <service-name> --url
+ 
+3.Get token from minikube dashboard
+From GATE-WAY.Use this to get access token from keycloak. 10.107.113.11:8080 is ClusterIp of Keycloak
+curl -X POST 'http://10.107.113.11:8080/realms/spring-boot-microservices-realm/protocol/openid-connect/token' \
+ -H "Content-Type: application/x-www-form-urlencoded" \
+ -d "grant_type=client_credentials" \
+ -d 'scope=openid' \
+ -d 'client_secret=cgsnpIM5q6JSdLKFGHIk0M9nkIcVPn3q' \
+ -d 'client_id=spring-cloud-client'
+ 
+ 
+ From GATE-WAY.Use this to get access token from keycloak. 10.244.0.86:8080 is IP of Keycloak
+ curl -X POST 'http://10.244.0.134:8080/realms/spring-boot-microservices-realm/protocol/openid-connect/token' \
+ -H "Content-Type: application/x-www-form-urlencoded" \
+ -d "grant_type=client_credentials" \
+ -d 'scope=openid' \
+ -d 'client_secret=90sGEFjxzs78oNmQsaH7ijm20P59ufwq' \
+ -d 'client_id=spring-cloud-client'
+ 
+ Create K8S SQL with preloaded data, SpringBoot App along
+ https://belowthemalt.com/2022/09/18/setup-of-spring-boot-application-initialization-of-postgresql-database-on-kubernetes-part-2/
+ https://phoenixnap.com/kb/kubernetes-mysql
+ https://medium.com/@AbhijeetKasurde/creating-mysql-pod-with-preloaded-database-2c01c002fdc3
+ 
+ -------------------------------------------------------------------------
+ Deploy SQL and use Deployed SQL to create schema, table:
+ 
+ minikube mount /mnt/d/data/init:/docker-entrypoint-initdb.d
+ 
+ kubectl exec -it <service-name> -- /bin/bash
+ mysql -h <service-name>  -u root -p
+ 
+ Must grant the Unix root user to use MySql
+ CREATE USER 'user'@'host' IDENTIFIED BY 'password';
+GRANT ALL PRIVILEGES ON *.* TO 'user'@'host' WITH GRANT OPTION;
+FLUSH PRIVILEGES;
+CREATE USER 'root'@'172.27.160.1' IDENTIFIED BY '123456';
+GRANT ALL PRIVILEGES ON *.* TO 'root'@'172.27.160.1'   WITH GRANT OPTION;
+ 
+ K8s:
+ https://www.kubermatic.com/blog/keeping-the-state-of-apps-1-introduction-to-volume-and-volumemounts/#:~:text=A%20Volume%20in%20Kubernetes%20represents,state%20before%20the%20container%20crashes.
+ 
+
+
+Minikube
+
+https://computingforgeeks.com/how-to-install-minikube-on-ubuntu-debian-linux/
+   
+    minikube mount /mnt/d/data/mysql-customer/storage:/mysql-initdatastorage
+	
+	kubectl delete deployment api-gateway
+	kubectl delete service api-gateway
+	
+	kubectl create deployment api-gateway --image=khanhkhanh196/ocs-train:1.1 -o yaml > api-gateway-deployment.yml
+	kubectl expose deployment api-gateway --name=api-gateway --port=9090 --target-port=9090 --type=LoadBalancer -o yaml > api-gateway-service.yml
+	
+	kubectl run -it --rm --image=mysql:8.0.32 --restart=Never mysql-client -- mysql -h mysql-customer -password="123456"
+
+kubectl run api-gateway  - image=api-gateway:lastest - port=8080 - env=env=DEV — labels=app=api-gateway,owner=user - privileged=false - dry-run=client -o yaml > api-gateway-deployment.yaml
+
+https://adamtheautomator.com/mongodb-kubernetes/

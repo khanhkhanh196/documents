@@ -1,0 +1,5 @@
+Hibernate Articles
+
+Issue:
+- N+1 : https://hackernoon.com/3-ways-to-deal-with-hibernate-n1-problem
+- LazyInitException : https://thorben-janssen.com/lazyinitializationexception/

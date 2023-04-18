@@ -1,0 +1,39 @@
+Kafka
+https://www.learningjournal.guru/article/kafka/installing-kafka-on-windows/
+
+start zookeeper
+start D:\kafka\kafka_2.12-3.4.0\bin\windows\zookeeper-server-start.bat D:\kafka\kafka_2.12-3.4.0\config\zookeeper.properties 
+
+
+start D:\kafka\kafka_2.12-3.4.0\bin\windows\kafka-server-start.bat D:\kafka\kafka_2.12-3.4.0\config\server.properties  
+ 
+
+create topic tutorialspedia
+start D:\kafka\kafka_2.12-3.4.0\bin\kafka-topics.sh --create --topic tutorialspedia --bootstrap-server localhost:9092
+
+get cluster id
+start D:\kafka\kafka_2.12-3.4.0\bin\zookeeper-shell.sh localhost:2181 get \cluster\id
+
+checklist of topics
+start D:\kafka\kafka_2.12-3.4.0\bin\kafka-topics.sh --list --zookeeper localhost:2181
+
+/mnt/d/quarkus/all-service/backend/customer-service
+
+consume
+start D:\kafka\kafka_2.12-3.4.0/bin/kafka-console-consumer.sh --bootstrap-server localhost:32781 --topic tutorialspedia --from-beginning
+
+Kafka Ubuntu
+
+/home/kafka/kafka/bin
+
+sudo /home/kafka/kafka/bin/zookeeper-server-start.sh /home/kafka/kafka/config/zookeeper.properties
+sudo /home/kafka/kafka/bin/kafka-server-start.sh /home/kafka/kafka/config/server.properties
+
+create topic
+sudo /home/kafka/kafka/bin/kafka-topics.sh --create --topic tutorialspedia --bootstrap-server localhost:9092
+
+consume
+sudo /home/kafka/kafka/bin/kafka-console-consumer.sh --bootstrap-server localhost:9092 --topic tutorialspedia --from-beginning
+
+kafka docker-compose
+docker network create kafka

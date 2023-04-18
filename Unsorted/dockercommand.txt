@@ -1,0 +1,1 @@
+docker tag ocs-training:latest khanhkhanh196/ocs-training:1.1
