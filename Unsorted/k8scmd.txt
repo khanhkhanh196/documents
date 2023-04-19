@@ -1,0 +1,11 @@
+kubectl create service nodeport api-gateway \
+    --tcp=9090 \
+    --node-port=30001 \
+    --dry-run=client -o yaml > api-gateway-service.yaml
+	
+kubectl create deployment api-gateway \
+    --image=khanhkhanh196/ocs-train:1.1 \
+    --dry-run=client -o yaml > api-gateway-deployment.yaml
+	
+
+glpat-mGq98CMqzzy9w_4UQR9n
