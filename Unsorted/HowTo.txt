@@ -129,3 +129,10 @@ https://computingforgeeks.com/how-to-install-minikube-on-ubuntu-debian-linux/
 kubectl run api-gateway  - image=api-gateway:lastest - port=8080 - env=env=DEV — labels=app=api-gateway,owner=user - privileged=false - dry-run=client -o yaml > api-gateway-deployment.yaml
 
 https://adamtheautomator.com/mongodb-kubernetes/
+
+
+debug pods minikube
+kubectl port-forward <your pod name> 5005:5005
+https://refactorfirst.com/how-to-remote-debug-java-application-on-kubernetes
+
+cluster interal url có dạng <service-name>.<namespace>.svc.cluster.local
