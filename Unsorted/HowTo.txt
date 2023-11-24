@@ -136,3 +136,5 @@ kubectl port-forward <your pod name> 5005:5005
 https://refactorfirst.com/how-to-remote-debug-java-application-on-kubernetes
 
 cluster interal url có dạng <service-name>.<namespace>.svc.cluster.local
+
+init postgresql permission error : https://forums.docker.com/t/data-directory-var-lib-postgresql-data-pgdata-has-wrong-ownership/17963/24
